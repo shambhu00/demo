@@ -1,0 +1,505 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: Poppins;
+    font-weight: 400;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+
+/* NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR*/
+
+nav {
+    padding: 8px;
+}
+
+.logo {
+    float: left;
+    padding: 8px;
+    margin-left: 16px;
+    margin-top: 15px;
+}
+
+.logo a {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+    margin-top: 7px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: rgb(126, 121, 121);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* ul li:first-child {
+    margin-left: 800px;
+} */
+
+ul li {
+    display: inline-block;
+}
+
+ul li:not(:first-child) {
+    margin-left: 48px;
+}
+
+ul li:last-child {
+    margin-right: 24px;
+}
+
+ul li a {
+    display: inline-block;
+    outline: none;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 864px) {
+    .logo {
+        padding: 0;
+    }
+    .nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #fff;
+        opacity: 0;
+        transition: all 0.2s ease;
+    }
+    .nav-wrapper ul {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+    .nav-wrapper ul li {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    .nav-wrapper ul li:nth-child(1) a {
+        transition-delay: 0.2s;
+    }
+    .nav-wrapper ul li:nth-child(2) a {
+        transition-delay: 0.3s;
+    }
+    .nav-wrapper ul li:nth-child(3) a {
+        transition-delay: 0.4s;
+    }
+    .nav-wrapper ul li:nth-child(4) a {
+        transition-delay: 0.5s;
+    }
+    .nav-wrapper ul li:not(:first-child) {
+        margin-left: 0;
+    }
+    .nav-wrapper ul li a {
+        padding: 10px 24px;
+        opacity: 0;
+        color: #000;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        transform: translateX(-20px);
+        transition: all 0.2s ease;
+    }
+    .nav-btn {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        display: block;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        z-index: 9999;
+        border-radius: 50%;
+    }
+    .nav-btn i {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #000;
+        border-radius: 2px;
+        margin-left: 14px;
+    }
+    .nav-btn i:nth-child(1) {
+        margin-top: 16px;
+    }
+    .nav-btn i:nth-child(2) {
+        margin-top: 4px;
+        opacity: 1;
+    }
+    .nav-btn i:nth-child(3) {
+        margin-top: 4px;
+    }
+}
+
+#nav:checked+.nav-btn {
+    transform: rotate(45deg);
+}
+
+#nav:checked+.nav-btn i {
+    background: #000;
+    transition: transform 0.2s ease;
+}
+
+#nav:checked+.nav-btn i:nth-child(1) {
+    transform: translateY(6px) rotate(180deg);
+}
+
+#nav:checked+.nav-btn i:nth-child(2) {
+    opacity: 0;
+}
+
+#nav:checked+.nav-btn i:nth-child(3) {
+    transform: translateY(-6px) rotate(90deg);
+}
+
+#nav:checked~.nav-wrapper {
+    z-index: 9990;
+    opacity: 1;
+}
+
+#nav:checked~.nav-wrapper ul li a {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR */
+
+
+/* STYLE FOR VIDEO */
+
+element.style {
+    bottom: 30px;
+    z-index: 5;
+    background-color: transparent;
+    border: none;
+}
+
+.playPauseAbsolute {
+    position: absolute;
+    left: 30px;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: content-box;
+}
+
+.nextImg {
+    width: 100%;
+}
+
+
+/*  Round Shaped Menu............................................................................................................................*/
+
+.ImageComponent-image {
+    border-radius: 500px;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    transition: transform .2s;
+}
+
+.ImageComponent-image:hover {
+    transform: scale(1.19);
+}
+
+.roundtext {
+    float: left;
+    font-weight: 200;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.SectionTitle-header {
+    font-weight: lighter;
+    margin-top: 100px;
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: nunito, nunitoFallback, arial, sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.roundtext:hover {
+    text-decoration: underline;
+}
+
+
+/* Shop Best Sellers................................................................................................... */
+
+.bspicrow-1 {
+    width: 500px;
+    height: 300px;
+    float: left;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+.bspicrow-2 {
+    padding-top: 200px;
+    width: 500px;
+    height: 300px;
+    float: left;
+    max-width: 100%;
+}
+
+
+/* SideBar...................................................................... */
+
+.wrapper {
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    padding-top: 50px;
+}
+
+.wrapper .sidebar ul li {
+    padding: 15px;
+    /* border-bottom: 1px solid black;
+    border-top: 1px solid rgb(87, 32, 32); */
+}
+
+.wrapper .sidebar ul {
+    list-style: none;
+    margin-left: -70px;
+}
+
+.wrapper .sidebar ul li a {
+    font-size: 17px;
+    font-weight: 100;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    font-family: "Lineto Brown Sub", "Lineto Brown Light Sub", Verdana, sans-serif!important
+}
+
+.wrapper .sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Photo First......................................................................................................... */
+
+.secondpaul {
+    padding-left: 300px;
+    padding-top: 60px;
+}
+
+
+/* /photo first .......................................................................................................... */
+
+
+/* Collobration........................................................................................................... */
+
+.Exclusively {
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-top: 1%;
+    font-weight: 100!important;
+    font-family: "Lineto Brown Sub", "Lineto Brown Light Sub", Verdana, sans-serif!important;
+}
+
+.plp-header {
+    box-sizing: content-box;
+    color: rgb(34, 34, 34);
+    display: block;
+    font-family: "Lineto Brown Sub", "Lineto Brown Light Sub", Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    height: 21.6px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    margin-block-end: 0px;
+    padding-bottom: 16px;
+    padding-left: 300px;
+    padding-right: 0px;
+    padding-top: 40px;
+    text-align: left;
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    width: 678px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.pcrow-1 {
+    float: left;
+    padding-top: 50px;
+}
+
+.pcrowcol-1 {
+    float: left;
+    padding-top: 50px;
+    padding-left: 250px;
+}
+
+
+/*/Collobration........................................................................................................... */
+
+
+/* about us.......................................................................................................... */
+
+.textmini {
+    text-align: center;
+    font-size: 16px;
+}
+
+.ImageComponent {
+    text-align: center;
+}
+
+.BrandComponent-wrapper {
+    padding-top: 140px;
+    display: flex;
+}
+
+.icontext {
+    /* padding-bottom: 100px; */
+    padding-top: 400px;
+    display: flex;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.texticon {
+    text-decoration-thickness: auto;
+    text-size-adjust: 100%;
+    color: rgb(33, 30, 34);
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    font-family: nunito, nunitoFallback, arial, sans-serif;
+}
+
+
+/* Footer....................................................................................................................... */
+
+.ResponsiveFooter {
+    background: #fff;
+    text-size-adjust: 100%;
+    font-size: 16px;
+}
+
+.ResponsiveFooter-Email {
+    border-top: 1px solid #d1d1d6;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(209, 209, 214);
+}
+
+.DailySalesSignup-Label {
+    font-family: nunito, nunitoFallback, arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-size-adjust: 100%;
+    padding-right: 8px;
+}
+
+.EmailBox {
+    height: 56px;
+}

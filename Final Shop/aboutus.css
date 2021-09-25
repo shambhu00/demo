@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: Poppins;
+    font-weight: 400;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+
+/* NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR*/
+
+nav {
+    padding: 8px;
+}
+
+.logo {
+    float: left;
+    padding: 8px;
+    margin-left: 16px;
+    margin-top: 15px;
+}
+
+.logo a {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+    margin-top: 7px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: rgb(126, 121, 121);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* ul li:first-child {
+margin-left: 800px;
+} */
+
+ul li {
+    display: inline-block;
+}
+
+ul li:not(:first-child) {
+    margin-left: 48px;
+}
+
+ul li:last-child {
+    margin-right: 24px;
+}
+
+ul li a {
+    display: inline-block;
+    outline: none;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 864px) {
+    .logo {
+        padding: 0;
+    }
+    .nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #fff;
+        opacity: 0;
+        transition: all 0.2s ease;
+    }
+    .nav-wrapper ul {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+    .nav-wrapper ul li {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    .nav-wrapper ul li:nth-child(1) a {
+        transition-delay: 0.2s;
+    }
+    .nav-wrapper ul li:nth-child(2) a {
+        transition-delay: 0.3s;
+    }
+    .nav-wrapper ul li:nth-child(3) a {
+        transition-delay: 0.4s;
+    }
+    .nav-wrapper ul li:nth-child(4) a {
+        transition-delay: 0.5s;
+    }
+    .nav-wrapper ul li:not(:first-child) {
+        margin-left: 0;
+    }
+    .nav-wrapper ul li a {
+        padding: 10px 24px;
+        opacity: 0;
+        color: #000;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        transform: translateX(-20px);
+        transition: all 0.2s ease;
+    }
+    .nav-btn {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        display: block;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        z-index: 9999;
+        border-radius: 50%;
+    }
+    .nav-btn i {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #000;
+        border-radius: 2px;
+        margin-left: 14px;
+    }
+    .nav-btn i:nth-child(1) {
+        margin-top: 16px;
+    }
+    .nav-btn i:nth-child(2) {
+        margin-top: 4px;
+        opacity: 1;
+    }
+    .nav-btn i:nth-child(3) {
+        margin-top: 4px;
+    }
+}
+
+#nav:checked+.nav-btn {
+    transform: rotate(45deg);
+}
+
+#nav:checked+.nav-btn i {
+    background: #000;
+    transition: transform 0.2s ease;
+}
+
+#nav:checked+.nav-btn i:nth-child(1) {
+    transform: translateY(6px) rotate(180deg);
+}
+
+#nav:checked+.nav-btn i:nth-child(2) {
+    opacity: 0;
+}
+
+#nav:checked+.nav-btn i:nth-child(3) {
+    transform: translateY(-6px) rotate(90deg);
+}
+
+#nav:checked~.nav-wrapper {
+    z-index: 9990;
+    opacity: 1;
+}
+
+#nav:checked~.nav-wrapper ul li a {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR  /NAVBAR */
+
+.textmini {
+    text-align: center;
+    font-size: 16px;
+}
+
+.ImageComponent {
+    text-align: center;
+}
+
+.BrandComponent-wrapper {
+    padding-top: 140px;
+    display: flex;
+}
+
+.icontext {
+    padding-top: 300px;
+    display: flex;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.texticon {
+    text-decoration-thickness: auto;
+    text-size-adjust: 100%;
+    color: rgb(33, 30, 34);
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    font-family: nunito, nunitoFallback, arial, sans-serif;
+}
+
+.SmallTextLink {
+    color: #211e22;
+    line-height: 24px;
+    text-decoration-line: underline;
+}
+
+.ImageComponent.SmallTextLink:hover {
+    text-decoration: none;
+}
+
+hr {
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    /* margin: 0px;
+    padding: 0px; */
+}
+
+
+/* Email............................................ */
+
+.EmailBox {
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-family: nunito, nunitoFallback, arial, sans-serif;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+input[type=email] {
+    width: 360px;
+    padding: 17.2px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid gray;
+    box-sizing: border-box;
+}
+
+.Subbtn {
+    top: 392.7%;
+    left: 74.5%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #211e22;
+    padding: 0 21px;
+    transition: .25s cubic-bezier(.65, .05, .36, 1);
+    transition-property: background-color, color, border-color;
+    position: absolute;
+    border: #211e22;
+}
+
+
+/* /Email............................................................ */
+
+
+/* LastWeb */
