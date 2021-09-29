@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <style>
+            label {
+            width: 100px;
+            font-size: 18px;
+            display: inline-block;
+        }
+        
+        input {
+            padding: 5px;
+            margin: 10px;
+        }
+        
+        h1 {
+            font-size: 45px;
+        }
+        
+        div {
+            background-color: rgb(175, 157, 219);
+            #subbtn {
+                padding: 10px;
+                width: 80px;
+                margin-bottom: 10px;
+                margin-top: 5px;
+                border-radius: 5px;
+            }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="Nameofstd"></h1>
+    <h2 id="finalsum"></h2>
+
+    <div style="width: 600px; border: 2px solid black; text-align: center; margin: auto;">
+        <h1>Marksheet</h1>
+        <label>Student Name:</label>
+        <input type="text" id="StdName" name="StdName" placeholder="Enter Your Name"><br>
+        <label>Maths:</label>
+        <input type="text" id="Maths" name="Maths" placeholder="Enter Maths Marks Here"><br>
+        <label>Science:</label>
+        <input type="text" id="Science" name="Science" placeholder="Enter Science Marks Here"><br>
+        <label>English</label>
+        <input type="text" id="English" name="English" placeholder="Enter English Marks Here"><br>
+        <label>Social Science</label>
+        <input type="text" id="SocialScience" name="SocialScience" placeholder="Enter SocialScience Marks Here"><br>
+        <button type="button" id="subbtn" onclick="ShowTotal()">Submit</button>
+    </div>
+
+    <script>
+        function ShowTotal(Maths, Science, English, SocialScience) {
+            var StdName = document.getElementById('StdName').value;
+            var Maths = document.getElementById('Maths').value;
+            var Science = document.getElementById('Science').value;
+            var English = document.getElementById('English').value;
+            var SS = document.getElementById('SocialScience').value;
+
+            var Total = 0;
+            Total = Number(Maths) + Number(Science) + Number(English) + Number(SS);
+            document.getElementById("finalsum").innerHTML = Total;
+            document.getElementById("Nameofstd").innerHTML = StdName;
+        }
+    </script>
+
+</body>
+
+</html>
