@@ -9,14 +9,10 @@ body {
 }
 
 .carticon {
+    left: 50%;
     height: 30px;
     text-decoration: none;
     color: black;
-}
-
-svg.carticon:hover span {
-    display: block;
-    z-index: 1;
 }
 
 .CartHoverContent {

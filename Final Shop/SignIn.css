@@ -1,0 +1,449 @@
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .WholeNavBar {
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: max-content auto max-content;
+                grid-template-areas: "logo menus toggler";
+                justify-items: stretch;
+                align-items: stretch;
+                /* column-gap: 40px; */
+            }
+            
+            .BrandName {
+                padding-left: 20px;
+                float: left;
+                padding: 10px;
+                margin-left: 16px;
+                margin-top: 20px;
+                color: #000;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 18px;
+                letter-spacing: 0px;
+                text-decoration: none;
+            }
+            
+            .NavMenus {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                display: flex;
+                grid-area: menus;
+                flex-direction: row;
+                justify-content: start;
+            }
+            
+            .NavMenus a {
+                display: inline-block;
+                outline: none;
+                color: #000;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 14px;
+                letter-spacing: 1.2px;
+                font-weight: 600;
+            }
+            
+            .NavMenus * {
+                padding-bottom: 5px;
+                padding-top: 10px;
+                padding-left: 20px;
+            }
+            
+            .carticon {
+                height: 30px;
+                margin-top: -18px;
+            }
+            /* .CollectionDropDown-Content {
+    display: inline-block;
+    margin-top: 60px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+} */
+            /* .CollectionDropDown-Content a {
+    color: rgb(126, 121, 121);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+} */
+            /* Login CSS BEGins.................................................... */
+            /* CustomerLogin-Block CustomerLogin-Block CustomerLogin-Block CustomerLogin-Block */
+            
+            .Login-Container {
+                box-sizing: border-box;
+            }
+            
+            .CustomerLogin-Block {
+                height: 592px;
+                width: 442px;
+                padding-left: 195px;
+            }
+            
+            .LoginBlock-content {
+                text-align: left;
+                /* padding-left: 27px; */
+            }
+            
+            .CustomerLogin-Block-Title {
+                /* padding-left: 100px; */
+                padding-top: 50px;
+                color: rgb(0, 0, 0);
+                font-family: 'Akkurat-Normal', Helvetica, Arial, sans-serif;
+                font-size: 26px;
+                text-align: center;
+                text-size-adjust: 100%;
+            }
+            
+            .Required-Fields {
+                /* padding-left: 170px; */
+                padding-top: 10px;
+                font-weight: 700;
+                box-sizing: border-box;
+                color: rgb(51, 51, 51);
+                display: inline-block;
+                font-family: 'Akkurat-Bold', Helvetica, Arial, sans-serif;
+                width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+            
+            .FieldNote {
+                text-align: left;
+                letter-spacing: 10em;
+                color: rgba(0, 0, 0, 0.911);
+                margin-top: 44px;
+                line-height: 25px;
+                letter-spacing: normal;
+                font-weight: 400;
+                font-size: 16px;
+                font-family: 'Akkurat-Normal', Helvetica, Arial, sans-serif;
+            }
+            
+            .FieldEmail {
+                padding-top: 28px;
+            }
+            
+            .FieldEmail label {
+                font-family: 'Akkurat-Bold', Helvetica, Arial, sans-serif;
+                font-weight: 700;
+                font-size: 13px;
+            }
+            
+            .EmailTextBox {
+                padding-top: 10px;
+                padding-left: -30px;
+                font-size: 16px;
+                font-family: 'Akkurat-Bold', Helvetica, Arial, sans-serif;
+                text-size-adjust: 100%;
+                -webkit-font-smoothing: antialiased;
+            }
+            
+            input[type=email] {
+                padding: 12px 20px;
+                height: 50px;
+                width: 400px;
+                display: inline-block;
+                border: 1px solid rgb(216, 216, 216);
+                box-sizing: border-box;
+            }
+            
+            .FieldPassword {
+                padding-top: 10px;
+            }
+            
+            .FieldPassword label {
+                font-family: 'Akkurat-Bold', Helvetica, Arial, sans-serif;
+                font-weight: 700;
+                font-size: 13px;
+            }
+            
+            .PassWordTextBox {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+                font-family: 'Akkurat-Bold', Helvetica, Arial, sans-serif;
+                text-size-adjust: 100%;
+                -webkit-font-smoothing: antialiased;
+            }
+            
+            input[type=password] {
+                padding: 12px 20px;
+                height: 50px;
+                width: 400px;
+                display: inline-block;
+                border: 1px solid rgb(216, 216, 216);
+                box-sizing: border-box;
+            }
+            
+            .SignInButton {
+                background-color: rgb(0, 0, 0);
+                font-family: 'Akkurat-Bold', Helvetica, Arial, sans-serif;
+                width: 400px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                color: #fff;
+                transition: .25s cubic-bezier(.65, .05, .36, 1);
+                transition-property: background-color, color, border-color;
+                border: #211e22;
+                display: table-cell;
+                vertical-align: middle;
+            }
+            
+            .SignInButton:hover {
+                opacity: 0.9;
+            }
+            
+            .ForgetPass {
+                padding-left: 130px;
+                /* text-align: center; */
+                padding-top: 20px;
+            }
+            
+            .ForgetPass a {
+                font-family: 'Akkurat-Normal', Helvetica, Arial, sans-serif;
+                text-decoration: none;
+                color: rgb(117, 117, 117);
+                font-size: 14px;
+                font-weight: 500;
+            }
+            /* login block css ended */
+            /* NEW CUSTOMER  NEW CUSTOMER  NEW CUSTOMER  NEW CUSTOMER */
+            
+            .New-CustomerBlock {
+                height: 400px;
+                width: 445px;
+                padding-left: 840px;
+                margin-top: -592px;
+            }
+            
+            .NewCustomer-Block-Title {
+                padding-top: 50px;
+                color: rgb(0, 0, 0);
+                font-family: 'Akkurat-Normal', Helvetica, Arial, sans-serif;
+                font-size: 26px;
+                text-align: center;
+                text-size-adjust: 100%;
+            }
+            
+            .NewCustomerBlock-Content {
+                text-align: left;
+                letter-spacing: 10em;
+                color: rgba(0, 0, 0, 0.911);
+                margin-top: 44px;
+                line-height: 25px;
+                letter-spacing: normal;
+                font-weight: 400;
+                font-size: 16px;
+                font-family: 'Akkurat-Normal', Helvetica, Arial, sans-serif;
+                padding-bottom: 42PX;
+                padding-top: 25PX;
+            }
+            
+            .NewCustomerBlock-Content p {
+                letter-spacing: 0.03em;
+                font-family: 'Akkurat-Normal', Helvetica, Arial, sans-serif;
+            }
+            
+            .Create-AccountButton {
+                background-color: rgb(0, 0, 0);
+                font-family: 'Akkurat-Bold', Helvetica, Arial, sans-serif;
+                width: 444px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                color: #fff;
+                transition: .25s cubic-bezier(.65, .05, .36, 1);
+                transition-property: background-color, color, border-color;
+                border: #211e22;
+                display: table-cell;
+                vertical-align: middle;
+            }
+            
+            .Create-AccountButton:hover {
+                opacity: 0.9;
+            }
+            /* ///NEW CUSTOMER  NEW CUSTOMER  NEW CUSTOMER  NEW CUSTOMER */
+            /* TRADE-CONTRACT  TRADE-CONTRACT  TRADE-CONTRACT  TRADE-CONTRACT  TRADE-CONTRACT  TRADE-CONTRACT  TRADE-CONTRACT */
+            
+            .TradeAndContract-Block {
+                margin-top: px;
+                background-color: rgb(238, 238, 238);
+                width: 444px;
+                height: 340px;
+                margin-left: 840px;
+                margin-bottom: 20px;
+            }
+            
+            .TradeAndContract-Title {
+                padding-top: 45px;
+                text-align: center;
+                color: rgb(0, 0, 0);
+                font-family: 'Akkurat-Normal', Helvetica, Arial, sans-serif;
+                font-size: 26px;
+            }
+            
+            .TradeAndContract-Content {
+                text-align: left;
+                letter-spacing: 10em;
+                color: rgba(0, 0, 0, 0.911);
+                line-height: 25px;
+                letter-spacing: normal;
+                font-weight: 500;
+                font-size: 15px;
+                font-family: 'Akkurat-Normal', Helvetica, Arial, sans-serif;
+                padding-top: 44PX;
+                padding-left: 25px;
+                padding-bottom: 32PX;
+            }
+            
+            .TradeAndContract-Content p {
+                letter-spacing: 0.03em;
+                font-family: 'Akkurat-Normal', Helvetica, Arial, sans-serif;
+            }
+            
+            .TradeAndContract-Content p a {
+                text-decoration: none;
+                color: black;
+            }
+            
+            .TradeAndContract-Content p a:hover {
+                text-decoration: underline;
+            }
+            
+            .Request-AccountButton {
+                color: black;
+                font-weight: 600;
+                margin-left: 15px;
+                font-family: 'Akkurat-Bold', Helvetica, Arial, sans-serif;
+                width: 391px;
+                height: 50px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            /* //TRADE-CONTRACT  TRADE-CONTRACT  TRADE-CONTRACT  TRADE-CONTRACT  TRADE-CONTRACT  TRADE-CONTRACT  TRADE-CONTRACT */
+            /* Email............................................ */
+            
+            hr {
+                height: 1px;
+                background-color: #ccc;
+                border: none;
+                /* margin: 0px;
+        padding: 0px; */
+            }
+            
+            .EmailBox {
+                padding: 30px;
+                text-align: center;
+                font-size: 16px;
+                font-family: nunito, nunitoFallback, arial, sans-serif;
+                text-size-adjust: 100%;
+                -webkit-font-smoothing: antialiased;
+            }
+            
+            .EmailBox input[type=email] {
+                width: 360px;
+                padding: 17.2px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 2px solid gray;
+                box-sizing: border-box;
+            }
+            
+            .Subbtn {
+                top: 122.4%;
+                left: 74.5%;
+                height: 49.5px;
+                display: flex;
+                align-items: center;
+                color: #fff;
+                background-color: #211e22;
+                padding: 0 21px;
+                transition: .25s cubic-bezier(.65, .05, .36, 1);
+                transition-property: background-color, color, border-color;
+                position: absolute;
+                border: #211e22;
+            }
+            
+            .Subbtn:hover {
+                opacity: 0.9;
+            }
+            /* /Email............................................................ */
+            /* LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb */
+            
+            .footer {
+                padding: 40px 0;
+                background-color: #fff;
+                background-color: #ededed;
+                font-family: 'Segoe UI';
+                font-weight: 400;
+            }
+            
+            .footer .social {
+                text-align: center;
+                padding-bottom: 25px;
+                color: #4b4c4d;
+            }
+            
+            .footer .social a {
+                font-size: 24px;
+                color: inherit;
+                border: 1px solid #ccc;
+                width: 40px;
+                height: 40px;
+                line-height: 38px;
+                display: inline-block;
+                text-align: center;
+                border-radius: 50%;
+                margin: 0 8px;
+                opacity: 0.75;
+                text-decoration: none;
+            }
+            
+            .footer .social a:hover {
+                opacity: 0.9;
+            }
+            
+            .footer ul {
+                margin-top: 0;
+                padding: 0;
+                list-style: none;
+                font-size: 18px;
+                line-height: 1.6;
+                margin-bottom: 0;
+                text-align: center;
+            }
+            
+            .footer ul li a {
+                color: inherit;
+                text-decoration: none;
+                opacity: 0.8;
+            }
+            
+            .footer ul li {
+                display: inline-block;
+                padding: 0 15px;
+            }
+            
+            .footer ul li a:hover {
+                opacity: 1;
+            }
+            
+            .footer .copyright {
+                margin-top: 15px;
+                text-align: center;
+                font-size: 13px;
+                color: #aaa;
+            }
+            /* //LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb  LastWeb */

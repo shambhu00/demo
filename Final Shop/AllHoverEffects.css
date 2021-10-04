@@ -1,0 +1,103 @@
+/* NEW ARRIVALS In Home Page */
+
+.NASection1 .NewArrivalsIMG:hover {
+    content: url('./New Arrivals/NewArrivalsLivingRoom1.2.jfif');
+}
+
+.NASection2 .NewArrivalsIMG:hover {
+    content: url('./New Arrivals/NewArrivalsLivingRoom2.2.jpg');
+}
+
+.NASection3 .NewArrivalsIMG:hover {
+    content: url('./New Arrivals/NewArrivalsLivingRoom3.2.jfif');
+}
+
+.NASection4 .NewArrivalsIMG:hover {
+    content: url('./New Arrivals/NewArrivalsLivingRoom4.2.jfif');
+}
+
+.NASection5 .NewArrivalsIMG:hover {
+    content: url('./New Arrivals/NewArrivalsLivingRoom5.2.jfif');
+}
+
+.NASection6 .NewArrivalsIMG:hover {
+    content: url('./New Arrivals/NewArrivalsLivingRoom6.2.jfif');
+}
+
+.NASection7 .NewArrivalsIMG:hover {
+    content: url('./New Arrivals/NewArrivalsLivingRoom7.2.jfif');
+}
+
+.NASection8 .NewArrivalsIMG:hover {
+    content: url('./New Arrivals/NewArrivalsLivingRoom8.2.jfif');
+}
+
+.NASection9 .NewArrivalsIMG:hover {
+    content: url('./New Arrivals/NewArrivalsLivingRoom9.2.jfif');
+}
+
+.NASection10 .NewArrivalsIMG:hover {
+    content: url('./New Arrivals/NewArrivalsLivingRoom10.2.jfif');
+}
+
+.NASection11 .NewArrivalsIMG:hover {
+    content: url('./New Arrivals/NewArrivalsLivingRoom11.2.jfif');
+}
+
+.NASection12 .NewArrivalsIMG:hover {
+    content: url('./New Arrivals/NewArrivalsLivingRoom12.2.jfif');
+}
+
+
+/* //NEW ARRIVALS In Home Page */
+
+
+/* BEST SELLERS In Home Page */
+
+.BSSection1 .NewArrivalsIMG:hover {
+    content: url('./Best Sellers IMG/BestSellers1.2.jfif');
+}
+
+.BSSection2 .NewArrivalsIMG:hover {
+    content: url('./Best Sellers IMG/BestSellers2.2.jfif');
+}
+
+.BSSection3 .NewArrivalsIMG:hover {
+    content: url('./Best Sellers IMG/BestSellers3.2.jfif');
+}
+
+.BSSection4 .NewArrivalsIMG:hover {
+    content: url('./Best Sellers IMG/BestSellers4.2.jfif');
+}
+
+.BSSection5 .NewArrivalsIMG:hover {
+    content: url('./Best Sellers IMG/BestSellers5.2.jfif');
+}
+
+.BSSection6 .NewArrivalsIMG:hover {
+    content: url('./Best Sellers IMG/BestSellers6.2.jfif');
+}
+
+.BSSection7 .NewArrivalsIMG:hover {
+    content: url('./Best Sellers IMG/BestSellers7.2.jfif');
+}
+
+.BSSection8 .NewArrivalsIMG:hover {
+    content: url('./Best Sellers IMG/BestSellers8.2.jfif');
+}
+
+.BSSection9 .NewArrivalsIMG:hover {
+    content: url('./Best Sellers IMG/BestSellers9.2.jfif');
+}
+
+.BSSection10 .NewArrivalsIMG:hover {
+    content: url('./Best Sellers IMG/BestSellers10.2.jfif');
+}
+
+.BSSection11 .NewArrivalsIMG:hover {
+    content: url('./Best Sellers IMG/BestSellers11.2.jfif');
+}
+
+.BSSection12 .NewArrivalsIMG:hover {
+    content: url('./Best Sellers IMG/BestSellers12.2.jfif');
+}

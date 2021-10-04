@@ -1,0 +1,86 @@
+/* NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.WholeNavBar {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: max-content auto max-content;
+    grid-template-areas: "logo menus toggler";
+    justify-items: stretch;
+    align-items: stretch;
+    /* column-gap: 40px; */
+}
+
+.BrandName {
+    padding-left: 20px;
+    float: left;
+    padding: 10px;
+    margin-left: 16px;
+    margin-top: 20px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+
+.NavMenus {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    grid-area: menus;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.NavMenus a {
+    display: inline-block;
+    outline: none;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+
+.NavMenus * {
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.carticon {
+    height: 30px;
+    margin-top: -18px;
+}
+
+
+/* .CollectionDropDown-Content {
+display: inline-block;
+margin-top: 60px;
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
+border-radius: 5px;
+} */
+
+
+/* .CollectionDropDown-Content a {
+color: rgb(126, 121, 121);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+} */
+
+
+/* //NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR  NAVBAR */

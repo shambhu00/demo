@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign-In</title>
+    <link rel="stylesheet" href="SignIn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+
+    <nav class="WholeNavBar">
+        <div class="BrandName">
+            Fixture
+        </div>
+        <div class="NavMenus">
+            <a href="http://127.0.0.1:5500/index.html">
+                <div style="margin-left: 800px;">Home</div>
+            </a>
+            <a href="/index.html#CAT">
+                <div>shop</div>
+            </a>
+            <a href="">
+                <div class="CollectionDropDown">collection</div>
+                <!-- <div class="CollectionDropDown-Content">
+                    <a href="/index.html#NEW">New Arrivals</a>
+                    <a href="/index.html#BEST">Best Sellers</a>
+                    <a href="/index.html#COL">Collaborations</a>
+                </div> -->
+            </a>
+            <a href="aboutus.html">
+                <div>About us</div>
+            </a>
+
+            <a href="#">
+                <div class="toggle-cart">
+                    <svg class="carticon" id="svg-icon-cart" viewBox="0 0 32 32">
+                        <title>Cart</title>
+                        <path fill="none" stroke="currentColor" stroke-width="context-stroke" stroke-linejoin="miter"
+                            stroke-linecap="square" stroke-miterlimit="4"
+                            d="M29.343 10.91l-3.498 7.271h-14.935l-4.484-10.909h-5.595"></path>
+                        <path fill="currentColor" stroke-width="0"
+                            d="M15.179 23.104c0-1.234-0.954-2.236-2.128-2.236s-2.128 1.002-2.128 2.236c0 1.236 0.954 2.236 2.128 2.236s2.128-1 2.128-2.236zM25.714 23.104c0-1.234-0.954-2.236-2.128-2.236-1.176 0-2.13 1.002-2.13 2.236 0 1.236 0.954 2.236 2.13 2.236 1.175 0 2.128-1 2.128-2.236z">
+                        </path>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <hr style="border: 1px dashed black;">
+
+    <div class="Login-Container">
+
+        <div class="CustomerLogin-Block">
+            <div class="CustomerLogin-Block-Title">
+                <p>Registered Customers</p>
+            </div>
+
+            <div class="Required-Fields">
+                <p>*Required-fields</p>
+            </div>
+
+            <div class="LoginBlock-content">
+                <div class="FieldNote">
+                    <p style="letter-spacing:0.03em;">If you have an account with us, log in using your email
+                        <br>address.
+                    </p>
+                </div>
+                <div class="FieldEmail">
+                    <label class="label" for="email">
+                        <span>Email Address*</span>
+                    </label>
+                    <div class="EmailTextBox">
+                        <input name="login[username]" autocomplete="off" id="email" title="email" type="email">
+                    </div>
+                </div>
+                <div class="FieldPassword">
+                    <label class="label" for="pass">
+                        <span>Password*</span>
+                    </label>
+                    <div class="PassWordTextBox">
+                        <input name="login[password]" autocomplete="off" id="pass" title="Password" type="password">
+                    </div>
+                </div>
+                <div class="FooterPart">
+                    <div class="SignInButton">
+
+                        <button class="SignInButton" type="submit" name="send">
+                            SIGN IN
+                        </button>
+
+                    </div>
+                    <div class="ForgetPass">
+                        <a href="">
+                            <p>Forgot your Password?</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="New-CustomerBlock">
+            <div class="NewCustomer-Block-Title">
+                <p>New Customers</p>
+            </div>
+            <div class="NewCustomerBlock-Content">
+                <p>By creating an account with our store, you will be able to<br>move through the checkout process faster, store multiple<br>shipping addresses, view and track your orders in your<br>account and more.
+                </p>
+            </div>
+            <button class="Create-AccountButton" type="submit" name="send">
+                CREATE AN ACCOUNT
+            </button>
+        </div>
+
+
+        <div class="TradeAndContract-Block">
+            <div class="TradeAndContract-Title">Trade & Contract</div>
+            <div class="TradeAndContract-Content">
+                <p>We want to provide furniture for your next project.
+                    <br> We can create elegant solutions to suit your needs at
+                    <br> a price that may pleasantly surprise you. Login to
+                    <br> your existing account on this page, <a href=""><b>learn more here</b></a>,
+                    <br>or click below to request an account.
+                </p>
+            </div>
+            <div class="Request-AccountButton">
+                <button class="Request-AccountButton" type="submit" name="send">
+                    REQUEST AN ACCOUNT
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- END OF HOME PAGE  END OF HOME PAGE  END OF HOME PAGE  END OF HOME PAGE  END OF HOME PAGE  END OF HOME PAGE  END OF HOME PAGE  END OF HOME PAGE  END OF HOME PAGE -->
+
+    <hr>
+
+    <footer class="ResponsiveFooter">
+        <div>
+            <form class="EmailBox" action="/action_page.php">
+                <label style="padding-right: 50px;" for="email">Sign up for access to new style edits and sales.</label>
+                <input type="email" id="email" name="email" placeholder="Email Address">
+
+                <button class="Subbtn" type="button">Submit</button>
+
+            </form>
+        </div>
+
+    </footer>
+
+    <section class="footer">
+        <div class="social">
+            <a href="#" <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" <i class="fab fa-snapchat"></i>
+            </a>
+            <a href="#" <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="/index.html#CAT">SHOP</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+
+        <p class="copyright">
+            Fixture @2021
+        </p>
+
+    </section>
+</body>
+
+</html>
